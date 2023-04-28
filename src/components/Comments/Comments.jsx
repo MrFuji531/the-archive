@@ -1,5 +1,5 @@
 // components/Comments/Comments.jsx
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 const Comments = () => {
   // Fetch and handle comments here
