@@ -1,0 +1,28 @@
+/* Footer.css */
+.footer {
+    background-color: rgba(4, 44, 98, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .left-side,
+  .right-side {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-side .footer-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

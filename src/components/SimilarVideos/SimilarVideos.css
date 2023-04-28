@@ -1,0 +1,9 @@
+/* SimilarVideos.css */
+.similar-videos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .similar-videos h3 {
+    margin-bottom: 16px;
+  }

@@ -1,0 +1,34 @@
+/* in your VideoPlayer.css or PageContent.css */
+.video-player {
+    width: 100%; /* Adjust this value as needed */
+  }
+  
+  .video-details h5 {
+    color: grey;
+    margin-bottom: 8px;
+  }
+  
+  .video-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .video-tag {
+    font-weight: bold;
+    color: rgba(4, 44, 98, 1);
+}
+
+.video-player-and-details {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%; /* Adjust this value as needed */
+  }
+  
+  .video-player-and-similar {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%; /* Adjust this value as needed */
+  }
+  

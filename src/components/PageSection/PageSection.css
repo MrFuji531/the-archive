@@ -1,0 +1,12 @@
+/* PageSection.css */
+.page-section {
+    padding: 32px 10vw;
+  }
+  
+  .section-title {
+    color: rgba(4, 44, 98, 1);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  

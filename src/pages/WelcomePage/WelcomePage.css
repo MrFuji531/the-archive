@@ -1,0 +1,31 @@
+.welcome-title {
+  color: rgba(4, 44, 98, 1);
+  font-size: 64px; /* Increase font size */
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.welcome-subheading {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  color: rgba(4, 44, 98, 1); /* Change color to blue */
+  font-weight: 500; /* Make it less bold */
+}
+
+.video-section-title {
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: bold;
+  color: rgba(4, 44, 98, 1);
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  margin-bottom: 32px;
+}
+
+.video-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}

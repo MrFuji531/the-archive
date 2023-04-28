@@ -1,0 +1,56 @@
+.ReactTags__tags {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .ReactTags__tagInput {
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  
+  .ReactTags__tagInputField {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    border: none;
+    outline: none;
+  }
+  
+  .ReactTags__selected {
+    display: inline-block;
+    padding: 5px;
+    background: #eee;
+    margin: 0 5px 5px 0;
+    border-radius: 2px;
+  }
+  
+  .ReactTags__tag {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px 5px 0;
+    background: #c0c0c0;
+    color: white;
+    border-radius: 2px;
+  }
+  
+  .ReactTags__remove {
+    color: #aaa;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .ReactTags__suggestions {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .ReactTags__activeSuggestion {
+    background: #b7cfe0;
+    cursor: pointer;
+  }
+  

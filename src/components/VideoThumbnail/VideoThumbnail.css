@@ -1,0 +1,32 @@
+.video-title {
+    font-size: 24px;
+    color: rgba(4, 44, 98, 1); 
+    margin-bottom: -28px;
+    text-decoration: none;
+  }
+.video-title-link {
+    text-decoration: none;
+  }
+  
+  .video-person {
+    font-size: 18px;
+    color: rgba(4, 44, 98, 1);
+    margin-bottom: -24px; /* Add a small margin-bottom */
+  }
+
+  .video-tag {
+    color: grey;
+    margin-right: 4px;
+    font-size: 10px;
+  }
+
+  .video-publish-date {
+    margin-bottom: -4px; /* Add a small margin-bottom */
+  }
+
+  .video-thumbnail img {
+    width: 272px; /* Increase the width */
+    height: 139px; /* Increase the height */
+    object-fit: cover;
+    margin-right: 16px;
+  }

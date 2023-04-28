@@ -1,0 +1,39 @@
+  .page-content {
+    padding-top: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  
+  @media (max-width: 1200px) {
+    .page-content {
+      padding-right: 1rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .page-content {
+      padding-right: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-content {
+      padding-right: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .page-content {
+      padding-right: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-content {
+      padding-right: 1rem;
+    }
+  }
