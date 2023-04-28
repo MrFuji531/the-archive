@@ -2,11 +2,13 @@ import React from 'react';
 import VideoThumbnail from '../VideoThumbnail/VideoThumbnail';
 // import './VideoSection.css';
 
-const VideoSection = ({ title, videos }) => {
+// eslint-disable-next-line react/prop-types
+const VideoSection = ({title, videos}) => {
   return (
     <div className="video-section">
       <h3 className="video-section-title">{title}</h3>
       <div className="video-row">
+        {/* eslint-disable-next-line react/prop-types */ }
         {videos.map((video) => (
           <VideoThumbnail
             key={video.id}

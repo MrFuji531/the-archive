@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../firebase';
+import React, {useState} from 'react';
+import {Link, useNavigate} from 'react-router-dom';
+import {signInWithEmailAndPassword} from 'firebase/auth';
+import {auth} from '../../firebase';
 import './LoginPage.css';
 
 const LoginPage = () => {
@@ -41,6 +41,7 @@ const LoginPage = () => {
       </form>
       {error && <p className="error-message">{error}</p>}
       <p>
+        {/* eslint-disable-next-line react/no-unescaped-entities */ }
         Don't have an account? <Link to="/signup">Sign up</Link>
       </p>
     </div>

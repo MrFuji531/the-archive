@@ -1,6 +1,6 @@
-import React, { useState, useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { IconButton, Menu, MenuItem } from '@material-ui/core';
+import React, {useState, useContext} from 'react';
+import {Link, useNavigate} from 'react-router-dom';
+import {IconButton, Menu, MenuItem} from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
 import MenuIcon from '@material-ui/icons/Menu';
 import logo from '../../images/book.png';
@@ -8,16 +8,16 @@ import SearchIcon from '@material-ui/icons/Search';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '@material-ui/core/TextField';
-import { auth } from '../../firebase';
-import { signOut } from 'firebase/auth';
+import {auth} from '../../firebase';
+import {signOut} from 'firebase/auth';
 import './Header.css';
-import { AuthContext } from '../../Contexts/AuthContext';
+import {AuthContext} from '../../Contexts/AuthContext';
 
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const isDesktop = useMediaQuery('(min-width:768px)');
-  const { user, setUser } = useContext(AuthContext) || {};
+  const {user, setUser} = useContext(AuthContext) || {};
   const navigate = useNavigate();
 
   const handleLogout = async () => {
@@ -78,9 +78,11 @@ const Header = () => {
         </div>
 
         <nav className={navClass}>
-  {user ? (
+          {user ? (
     <>
-      <Link to="/upload" className="nav-link upload-link" onClick={handleUpload}>
+      <Link to="/upload"
+        className="nav-link upload-link"
+        onClick={handleUpload}>
         Upload
       </Link>
       <Link to="/about" className="nav-link">
@@ -90,7 +92,7 @@ const Header = () => {
         Contact
       </Link>
       <IconButton className="nav-link user-icon" onClick={handleClick}>
-        <PersonIcon style={{ color: 'rgba(4, 44, 98, 1)' }} />
+        <PersonIcon style={{color: 'rgba(4, 44, 98, 1)'}} />
       </IconButton>
       <Menu
         anchorEl={anchorEl}
@@ -120,7 +122,7 @@ const Header = () => {
       </Link>
     </>
   )}
-</nav>
+        </nav>
         {!isDesktop && (
           <IconButton
             edge="start"

@@ -3,7 +3,7 @@ import React from 'react';
 import VideoThumbnail from '../VideoThumbnail/VideoThumbnail';
 import './SimilarVideos.css';
 
-const SimilarVideos = ({ currentVideoId }) => {
+const SimilarVideos = ({}) => {
   // Fetch similar videos and store them in a state variable
   // For now, we'll use dummy data
   const similarVideos = [

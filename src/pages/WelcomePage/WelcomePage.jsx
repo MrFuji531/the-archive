@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './WelcomePage.css';
 import '../../PageContent.css';
-import { firestore } from '../../firebase';
-import { collection, getDocs } from 'firebase/firestore';
-import VideoSection from '../../components/VideoSection/VideoSection'; // Import the VideoSection component
+import {firestore} from '../../firebase';
+import {collection, getDocs} from 'firebase/firestore';
+import VideoSection from '../../components/VideoSection/VideoSection';
 
 const WelcomePage = () => {
   const [videos, setVideos] = useState([]);
@@ -11,7 +11,8 @@ const WelcomePage = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       const videoCollection = await getDocs(collection(firestore, 'videos'));
-      setVideos(videoCollection.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+      setVideos(videoCollection.docs.map((doc) =>
+        ({id: doc.id, ...doc.data()})));
     };
 
     fetchVideos();
@@ -26,7 +27,8 @@ const WelcomePage = () => {
     <div className="page-content">
       <div className="welcome-page">
         <h1 className="welcome-title">The Archive</h1> {/* Add main title */}
-        <h2 className="welcome-subheading">A place to preserve and share our stories</h2>
+        <h2 className="welcome-subheading">
+          A place to preserve and share our stories</h2>
 
         <div className="video-section">
           <VideoSection title="Featured" videos={featuredVideos} />

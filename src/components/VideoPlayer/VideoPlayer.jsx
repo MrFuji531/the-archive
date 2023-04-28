@@ -1,6 +1,8 @@
 import React from 'react';
 
-const VideoPlayer = ({ videoId, videoUrl }) => {
+// eslint-disable-next-line react/prop-types
+const VideoPlayer = ({videoId, videoUrl}) => {
+  // eslint-disable-next-line react/prop-types
   const isYouTubeVideo = videoUrl && videoUrl.includes('youtube.com');
 
   if (isYouTubeVideo) {
@@ -13,7 +15,8 @@ const VideoPlayer = ({ videoId, videoUrl }) => {
           src={videoSrc}
           title="Video player"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
       </div>

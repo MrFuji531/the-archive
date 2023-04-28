@@ -1,9 +1,10 @@
-import React, { useState, useEffect, createContext } from 'react';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import React, {useState, useEffect, createContext} from 'react';
+import {getAuth, onAuthStateChanged} from 'firebase/auth';
 
 export const AuthContext = createContext();
 
-const AuthProvider = ({ children }) => {
+// eslint-disable-next-line react/prop-types
+const AuthProvider = ({children}) => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const AuthProvider = ({ children }) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, setUser }}>
+    <AuthContext.Provider value={{user, setUser}}>
       {children}
     </AuthContext.Provider>
   );
